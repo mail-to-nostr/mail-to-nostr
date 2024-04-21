@@ -55,7 +55,7 @@ We are thinking about open sourcing the base functions of the gateway. But as al
 
 ## Free of charges
 
-For now using the service is free of charges. But it is not guaranteed, that it always stays this way. As there 
+For now using the service is free of charges. But it is not guaranteed, that it always stays this way, depending if some relays will start charging for direct messages.
 
 # Privacy
 
