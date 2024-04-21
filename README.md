@@ -4,13 +4,13 @@ mail-to-nostr.com is a Mail to Nostr one-way gateway. It forwards mails send to 
 
 # Motivation
 
-I often come over websites in the internet, where I just need a throwaway mail address. I know there are services where you can generate some but I was just thinking, why not just relay it to your nostr account? And here we are.
+We often came over websites in the internet, where we just need a throwaway mail address. We know there are services where you can generate some but we were just thinking, why not just relay it to your nostr account? And here we are.
 
 # How does it work
 
 Just use your publickey @ mail-to-nostr.com and every mail which will be send there will be forwarded to your nostr account.
 
-You can uses the hexadecimal version, like 0123456789ABCDEF...0123456789ABCDEF@mail-to-nostr.com or the npub version like npub...@mail-to-nostr.com
+You can use the hexadecimal version, like 0123456789ABCDEF...0123456789ABCDEF@mail-to-nostr.com or the npub version like npub...@mail-to-nostr.com
 
 # Technically
 
@@ -25,6 +25,7 @@ Some technical aspects of the service. Which of course could change over time.
 - Plain text mail content ist forwarded as presented
 - HTML mail content is converted to markdown and forwarded
 - Mail Attachments are not send and dropped
+- We provide some basic mail header information to the recipient
 - Answering to mails is not possible, we are a mail to nostr one way
 - There is a rate limit active to counteract spammers
 - There are ip bans active to counteract spammers
@@ -33,10 +34,12 @@ Some technical aspects of the service. Which of course could change over time.
 
 Right now we are connected to following nostr relays:
 
-- relay.damus.io
-- nos.lol
-- nostr.wine
-- nostr.oxtr.dev
+- wss://relay.damus.io
+- wss://nos.lol
+- wss://nostr.wine
+- wss://nostr.oxtr.dev
+- wss://relay.snort.social
+- wss://relay.current.fyi
 
 If you point your client here you should get the direct messages.
 
@@ -48,11 +51,15 @@ If you violate the limits to heavy your /24 ip pool will be banned from using ma
 
 ## Open Sourcing
 
-I am thinking about open sourcing the base functions of the gateway. But as always, limit time, limit resources.
+We are thinking about open sourcing the base functions of the gateway. But as always, limit time, limit resources.
+
+## Free of charges
+
+For now using the service is free of charges. But it is not guaranteed, that it always stays this way. As there 
 
 # Privacy
 
-Is it save and private to use? Not much more save and private then other services in the web. We are not reading or saving any data but theoretically We could, of course. So don't use it for any conversation where you really want to be private.
+Is it save and private to use? Not much more save and private then other services in the web. We are not reading or saving any data but theoretically we could, of course. So don't use it for any conversation where you really want to be private.
 
 And again for the nation states: WE ARE NOT SAVING ANY DATA. So don't bother us with requests.
 
@@ -63,9 +70,8 @@ We are not responsible for any mail content. Please address any complaints direc
 We don't save any data about the mails author or the mail.
 The content of the mail is provided "as is", with no guarantees of completeness, accuracy, usefullness or timeliness.
 There is no guarantees for the server running all the time. Downtimes are to be expected.
-This is a readonly message, replies will not be read and dropped!
 By using this service you accept this conditions and terms.
 
 # Contact
 
-You can reach me here npub14e8g06yf0kp900vu3mq8fu9jhl6pueh4xpc7u0lly5wuvug8e7gqr96utv
+You can reach us here npub14e8g06yf0kp900vu3mq8fu9jhl6pueh4xpc7u0lly5wuvug8e7gqr96utv
